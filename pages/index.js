@@ -44,8 +44,22 @@ export default function Home() {
 
       <div
         id="about"
-        className="duration-300 h-screen flex flex-col items-center justify-center"
+        className="duration-300 h-screen flex flex-col items-center justify-start"
       >
+        <div
+          className={clsx(
+            "h-20 bg-white w-screen mb-16 flex flex-row items-center justify-between px-20"
+          )}
+        >
+          <div className="text-black font-black text-2xl">LOGO</div>
+          <div className="flex gap-8">
+            <div className="text-black text-xl">MenuItem</div>
+            <div className="text-black text-xl">MenuItem</div>
+            <div className="text-black text-xl">MenuItem</div>
+            <div className="text-black text-xl">MenuItem</div>
+          </div>
+        </div>
+
         <About />
       </div>
     </>

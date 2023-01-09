@@ -11,6 +11,14 @@
   background-size: cover;
 }
 
+.submain {
+  min-height: 100vh;
+  min-width: 100wh;
+  background-position: center;
+  background-image: url("../public/rain.gif");
+  background-size: auto;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
