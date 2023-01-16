@@ -138,6 +138,10 @@
   }
 }
 
+.animate {
+  animation: spin 100s linear infinite;
+}
+
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
@@ -163,4 +167,9 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+@font-face {
+  font-family: Bakbak;
+  src: url("../public/fonts/BakbakOne-Regular.ttf");
 }

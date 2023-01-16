@@ -1,13 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { BiChevronDownCircle } from "react-icons/bi";
-import { Bakbak_One } from "@next/font/google";
 import clsx from "clsx";
 import About from "./about";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-const bakbak = Bakbak_One({ weight: "400", style: "normal" });
 
 export default function Home() {
   const Home = {
@@ -27,8 +23,7 @@ export default function Home() {
       <div className="h-screen flex flex-col items-center justify-center">
         <div
           className={clsx(
-            "w-screen text-[100px] md:text-[180px] text-white text-center leading-none mb-10 md:mb-4",
-            bakbak.className
+            "w-screen text-[100px] md:text-[180px] text-white text-center leading-none mb-10 md:mb-4 font-primary"
           )}
         >
           {Home.Title}
@@ -46,20 +41,6 @@ export default function Home() {
         id="about"
         className="duration-300 h-screen flex flex-col items-center justify-start"
       >
-        <div
-          className={clsx(
-            "h-20 bg-white w-screen mb-16 flex flex-row items-center justify-between px-20"
-          )}
-        >
-          <div className="text-black font-black text-2xl">LOGO</div>
-          <div className="flex gap-8">
-            <div className="text-black text-xl">MenuItem</div>
-            <div className="text-black text-xl">MenuItem</div>
-            <div className="text-black text-xl">MenuItem</div>
-            <div className="text-black text-xl">MenuItem</div>
-          </div>
-        </div>
-
         <About />
       </div>
     </>
